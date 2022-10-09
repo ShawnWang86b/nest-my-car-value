@@ -3,6 +3,27 @@ POST http://localhost:3000/auth/signup
 Content-type: application/json
 
 {
-  "email": "asdf@asdf.com",
-  "password": "asdfasdfasdf"
+  "email": "wsz@gmail.com",
+  "password": "wszwszwsz"
 }
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/4
+
+### Find all users with email
+GET http://localhost:3000/auth?email=wsz@gmail.com
+
+
+### Delete a user with a given id
+DELETE  http://localhost:3000/auth/2
+
+###Update a user
+PATCH http://localhost:3000/auth/4
+Content-type: application/json
+
+{ 
+  "password":"mima111"
+}
+
+### Find all user in the db
+GET  http://localhost:3000/auth
